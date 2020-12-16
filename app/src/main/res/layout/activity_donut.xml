@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salatt.droidcafe.DonutActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/donut_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            >
+            <ImageView
+                android:id="@+id/donut_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/light_grey"
+                android:paddingBottom="10dp"
+                android:adjustViewBounds="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/donut_title"
+                android:text="@string/my_donut_title"
+                android:textColor="@color/alpine_blue"
+                android:layout_alignBottom="@id/donut_image"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/donut_prep"
+                android:text="@string/prep_amp_cook_time_2hrs"
+                android:textColor="@color/dark_grey"
+                android:layout_below="@id/donut_image"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="8dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:drawableLeft="@drawable/prep_time"
+                app:drawableStartCompat="@drawable/prep_time"
+                android:drawableStart="@drawable/prep_time" />
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/divider"
+                android:layout_height="1dp"
+                android:layout_below="@id/donut_prep"
+                android:background="@color/dark_grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/donut_description"
+                android:text="the donut has a short Description here"
+                android:textColor="@color/alpine_blue"
+                android:layout_below="@id/divider"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donut_cardView"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to prepare Donuts"
+            android:textStyle="bold"
+            android:textColor="@color/alpine_blue"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salatt.droidcafe.DesertRecipeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/text_intro"
+         android:text="@string/desert_recipes"
+         android:layout_marginTop="16dp"
+         android:layout_centerHorizontal="true"
+         android:textColor="@color/alpine_blue"
+         android:textAllCaps="true"
+         android:textStyle="bold"
+         android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_browse_recipes"
+        android:text="@string/browse_recipes"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_intro"
+        android:textColor="@color/light_grey"
+        android:textStyle="italic"
+        android:textSize="14sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_browse_recipes"
+        android:foregroundGravity="center"
+        android:id="@+id/recycler_dessert">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
